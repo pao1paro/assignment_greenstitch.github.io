@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+     <meta charset="utf-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title> Admin Dashboard</title>
+     <link rel="stylesheet" href="pp.css">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined"
+rel="stylesheet">   
+
+     </head>
+    <body>
+          <div class="grid-container">
+           <header class="header">
+               <div class="menu-icon" onclick="openSidebar()">
+                   <span class="material-icons-outlined">menu</span>
+               </div>
+               <div class="header-left">
+                   <div class="search_bar">
+                       <div class="search">
+                    <input type="search" placeholder="Search">
+                   </div>
+                </div>
+
+                   
+               </div>
+               <div class="header-right">
+                <span id="noti" class="material-icons-outlined">notifications</span>
+                <span id="email" class="material-icons-outlined">email</span>
+                <span id="dash" class="material-icons-outlined">dashboard</span>
+                <span id = "acc" class="material-icons-outlined">
+                    account_circle
+                    </span>
+               </div>
+           </header>
+            
+           <aside id="sidebar">
+            
+            <div class="sidebar-title">
+                <div class="sidebar-brand">
+                <span class="material-icons-outlined">shopping_cart</span>  GREENSTITCH      
+                 </div>
+                <span class="material-icons-outlined" onclick="closeSidebar()">close</span>
+            </div>
+           
+            <ul class="sidebar-list">
+                <li class="sidebar-list-item">
+                    DASHBOARD
+                    <div class="menu">
+                        <div class="item">
+                            <span id="ss" class="material-icons-outlined">
+                                dashboard
+                                </span>
+                            <a class="sub-btn"><i></i>
+                                
+                                Dashboard
+                                <span id="arrow" class="material-icons-outlined">
+                                    expand_more </span>
+                                </a>
+                            <div class="sub-menu">
+                               <a href="#" class="sub-item">Record</a>
+                               <a href="#" class="sub-item">Reports</a>
+                               <a href="#" class="sub-item">Analyse</a>
+                               <a href="#" class="sub-item">Learn</a>
+                            </div>
+                          </div>
+
+
+                    </div>
+                </li>
+                <li class="sidebar-list-item">
+                   PAGES
+                   <div class="item">
+                    <span id="ss" class="material-icons-outlined">
+                        help
+                        </span>
+                    <a class="sub-btn"><i></i>
+                        
+                        Help Center
+                        <span id="arrow" class="material-icons-outlined">
+                            expand_more </span>
+                        </a>
+                    <div class="sub-menu">
+                       <a href="#" class="sub-item">Record</a>
+                       <a href="#" class="sub-item">Reports</a>
+                       <a href="#" class="sub-item">Analyse</a>
+                       <a href="#" class="sub-item">Learn</a>
+                    </div>
+                    <span id="ss" class="material-icons-outlined">
+                        folder
+                        </span>
+                    <a class="sub-btn"><i></i>
+                        File Manager
+                        <span id="arrow" class="material-icons-outlined">
+                            expand_more </span>
+                        </a>
+                    <div class="sub-menu">
+                       <a href="#" class="sub-item">Record</a>
+                       <a href="#" class="sub-item">Reports</a>
+                       <a href="#" class="sub-item">Analyse</a>
+                       <a href="#" class="sub-item">Learn</a>
+                    </div>
+                    
+                  </div>
+                </li>
+            </ul>
+           </aside>
+
+            <main class="main-container">
+            <div class="main-cards">
+                 <div class="card">
+                  
+                     <div class="pr_process">Carbon FootPrint</div>
+                    
+                    <div class="pr_amount">2,412,314t</div>
+                    <div class="pr_name">CO2e</div>
+                    <div class="pr_prcent">45%</div>
+                 </div>
+                 <div class="card">
+                    <div class="pr_process">Emission by Spinning</div>
+                    
+                    <div class="pr_amount">2,412,314t</div>
+                    <div class="pr_name">CO2e</div>
+                    <div class="pr_prcent">45%</div>
+                  </div>
+                  <div class="card">
+                    <div class="pr_process">Emission by Transportaion</div>
+                    
+                    <div class="pr_amount">2,412,314t</div>
+                    <div class="pr_name">CO2e</div>
+                    <div class="pr_prcent">45%</div>
+                  </div>
+                  <div class="card"> 
+                    <div class="pr_process">Emission by Carding </div>
+                    
+                    <div class="pr_amount">2,412,314t</div>
+                    <div class="pr_name">CO2e</div>
+                    <div class="pr_prcent">45%</div>
+                  </div>
+
+
+            </div>
+            <div class="chartjs">
+               <div class="charts-card">
+                   <h4 class="chart-title">Carbon Footprint</h4>
+                   <div id="bar-chart"></div>
+               </div>
+
+               <div class="charts-card">
+                <h4 class="chart-title"></h4>
+                <div id="area-chart"></div>
+            </div>
+
+
+
+            </div>
+            </main>
+
+
+
+
+          </div>
+
+
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/apexcharts/3.38.0/apexcharts.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+          <script src="pp.js"></script>
+    </body>
+</html>
